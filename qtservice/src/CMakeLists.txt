@@ -57,7 +57,7 @@ if(WIN32)
         qtservice_win.cpp)
 endif()
 
-add_library(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
+add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES} ${HEADER_FILES})
 set_target_properties(${PROJECT_NAME} PROPERTIES
     PUBLIC_HEADER "${INSTALL_HEADER_FILES}" # Install head files
     )

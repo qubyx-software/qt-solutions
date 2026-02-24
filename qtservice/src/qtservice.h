@@ -62,7 +62,7 @@
 //class QStringList;
 class QtServiceControllerPrivate;
 
-class QT_QTSERVICE_EXPORT QtServiceController
+class QtServiceController
 {
     Q_DECLARE_PRIVATE(QtServiceController)
 public:
@@ -99,7 +99,7 @@ private:
 
 class QtServiceBasePrivate;
 
-class QT_QTSERVICE_EXPORT QtServiceBase
+class QtServiceBase
 {
     Q_DECLARE_PRIVATE(QtServiceBase)
 public:
