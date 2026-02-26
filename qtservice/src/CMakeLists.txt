@@ -115,10 +115,10 @@ install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/QtServiceConfig.cmake"
     DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
 
-# configure_file(${CMAKE_SOURCE_DIR}/cmake/QtService.pc.in
-#     ${CMAKE_BINARY_DIR}/QtService.pc
-#     @ONLY)
-# install(FILES
-#     ${CMAKE_BINARY_DIR}/QtService.pc
-#     DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
-#     )
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/../cmake/QtService.pc.in
+    ${CMAKE_CURRENT_BINARY_DIR}/QtService.pc
+    @ONLY)
+install(FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/QtService.pc
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
+    )
